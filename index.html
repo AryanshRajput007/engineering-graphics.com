@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+  p {font-size: 22px;}
+  ol li{
+ font-size:22px;
+}
+
+div {
+  border: 2px solid;
+  
+}
+.verticle-line{
+width:1px;
+height:500px;
+color:black;:
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+ .line-1 {
+  height: 1px;
+  border: bottom;
+  background:black;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ENGINEERING GRAPHICS</h1>
+  <p>"A PIECE OF PAPER CANNOT DECIDE MY FUTURE"</p>
+</div>
+
+<div class="topnav">
+  <a href="https://drive.google.com/drive/folders/1DAFCw2y62SGsyIdLCwgzX4Ah3MgAYacV?usp=share_link" target="_blank">EG SYLLABUS</a>
+  <a href="file:///C:/Codes/HTML/index.html#">MCQs</a>
+  <a href="https://drive.google.com/drive/folders/1VHhhZeQ2ZRxb5zmZ6QCj2V3SD1dBccCI?usp=share_link" target="_blank">EG Previous Year Paper's </a>
+  <a href="https://www.youtube.com/watch?v=eDreK-2XvnQ&list=PLO9rjUa0hbt9-xq3Gd8--2H-IRI-BAcBt&pp=iAQB" target="_blank">Intro to EG</a>
+  <a href="https://www.youtube.com/watch?v=vJ2LlnjnzsA&list=PLO9rjUa0hbt8vLWG52sWdNPIz-Hn4H5i5&pp=iAQB" target="_blank">Engineering curves</a>
+  <a href="https://youtube.com/playlist?list=PLO9rjUa0hbt-VIoC49PlTv5EecByOlJAl" target="_blank">Projection of line</a>
+  <a href="https://www.youtube.com/watch?v=Fu8jmTMpz8k&list=PLO9rjUa0hbt-5IgSTa_TwfXlxG-H4avfQ&pp=iAQB" target="_blank">Projection of Planes</a>
+  <a href="https://www.youtube.com/watch?v=SWm9gmIhfOM&list=PLO9rjUa0hbt_Ej4tTQNw2DllrOIBv0oTS&pp=iAQB" target="_blank">Projection of Solids</a>
+  <a href="https://www.youtube.com/watch?v=u68jLaAr31g&list=PLO9rjUa0hbt-YXJu6vV7bo7rZT0I_LX1o&pp=iAQB" target="_blank">Section of Solids</a>
+  <a href="https://www.youtube.com/watch?v=3vdUIDTXVgQ&list=PLO9rjUa0hbt-4Tnzyu-QkGUfmU9uGMr2f&pp=iAQB" target="_blank">Development of Surfaces</a>
+  <a href="https://drive.google.com/drive/folders/1KMi2KC8PJWMPxcLdzGeH6pFnKxG2TzRl?usp=share_link" target="_blank">Reference book</a>
+  
+</div>
+
+<div class="row">
+  <div class="center-column">
+
+    <div class="card">
+      <h2>ALL MCQ'S FROM PREVIOUS YEAR PAPER'S</h2>
+      <h5>Last updated on 18-05-2023 Made By Aryansh Rajput</h5>
+      <ol>
+      <li><p>A rectangle will appear on the Isometric drawing as______ a shape.</p></li>
+      <p>ANS. Parallelogram</p><hr style="height:4px;border-width:0;background-color:black;">
+      <li><p> _______is generally used to show areas of the sectional view.</p></li>
+      <p>ANS. Hatching </p><hr style="height:4px;border-width:0;background-color:black;">
+      <p><li>Which type of line is to show hidden parts ___________.</li></p>
+      <p>Hidden Lines</p><div id="verticle-line" ></div>
+      <p><li>‘Representative fraction’ (RF) is defined as_________</li></p>
+      <p>ANS. <sup>Drawing Length</sup>&frasl;<sub>Actual Length</sub></p><div class="line-1"></div>
+      <li><p>In 3rd angle projection the _________ lies between ___________ and ____________</p></li>
+      <p>ANS. In 3rd angle projection, the object lies between the observer and the projection planes.</p><div id="verticle-line" ></div>
+       <li><p>In unidirectional system the dimensions are ______.</p></li>
+      <p>ANS. Placed by breaking the dimension line in the middle</p><div id="verticle-line" ></div>
+       <li><p>In aligned system the dimensions are __________.</p></li>
+      <p>ANS. ) Placed parallel to the dimension line</p><div id="verticle-line" ></div>
+       <li><p>The isometric axis is inclined at ___ degrees to each other.</p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+       <li><p>If a line AB parallel to both the horizontal plane and vertical plane then the line AB is</p></li>
+      <p>ANS. Then it is perpendicular to Profile Plane</p><div id="verticle-line" ></div>
+       <li><p>If a right-angled triangle is made to revolute about one of its perpendicular sides the solid formed is?</p></li>
+      <p>ANS. Cone</p><div id="verticle-line" ></div>
+       <li><p>Straight lines drawn from the apex to the circumference of the base-circle are all equal and are 
+called? </p></li>
+      <p>ANS. Slant Height</p><div id="verticle-line" ></div>
+       <li><p>A plane is held parallel to horizontal plane in which view we can watch drawing on that plane?</p></li>
+      <p>ANS. Top View</p><div id="verticle-line" ></div>
+       <li><p>If the cutting plane is inclined to the axis and it cuts all the generators, then the conic formed is known as?</p></li>
+      <p>ANS. Ellipse</p><div id="verticle-line" ></div>
+       <li><p>If the cutting plane is inclined to the axis but does not cut all the generators then what is the name of the conics formed?</p></li>
+      <p>ANS. Parabola</p><div id="verticle-line" ></div>
+       <li><p>If the 10 m length is represented as 1cm then the Representative Fraction is</p></li>
+      <p>ANS. <sup>1</sup>&frasl;<sub>1000</sub></p><div id="verticle-line" ></div>
+       <li><p>In first angle projection method The Left Hand Side View is placed on th</p></li>
+      <p>ANS.  right side of the object or Elevation</p><div id="verticle-line" ></div>
+       <li><p>A Point behind V.P and Below H.P is in which quadrant?</p></li>
+      <p>ANS. Third Quadrant</p><div id="verticle-line" ></div>
+       <li><p>Eccentricity of which one is greater than 1?</p></li>
+      <p>ANS. Hyperbola</p><div id="verticle-line" ></div>
+       <li><p>For the First Angle Projection Method, Which of the following is correct sequence?</p></li>
+      <p>ANS. Observer- Plane of Projection- Object</p>
+       <li><p>The shape of a vertical face of right regular pentagonal prism is always___________</p></li>
+      <p>ANS. Pentagon</p><div id="verticle-line" ></div>
+       <li><p>In a parabola, distance of focus to vertex is 40 mm the distance of focus to directrix is ___mm.</p></li>
+      <p>ANS. 40 mm</p><div id="verticle-line" ></div>
+       <li><p>The Surface of tetrahedron is made up of _____ number of equilateral triangles.</p></li>
+      <p>ANS. 4</p><div id="verticle-line" ></div>
+       <li><p>The right regular cone of 60 mm base circle diameter and 80 mm axis height, is resting
+completely on its base on H.P, its top view will be appeared as ________ in shape.</p></li>
+      <p>ANS. Point and a circle with Hidden line</p><div id="verticle-line" ></div>
+       <li><p>When a circle rolls over the Flat surface without Slipping, the path traced out by a point on the
+circumference is called ____________(name the curve)</p></li>
+      <p>ANS. Cycloid</p><div id="verticle-line" ></div>
+       <li><p>Which of the following Curves is known as Conic Curves?</p></li>
+      <p>(A) Involute</p>
+      <p> (B) Spiral</p>
+      <p> (C) Hyperbola</p>
+      <p> (D) Cycloid</p>
+      <p>ANS. Hyperbola</p><div id="verticle-line" ></div>
+       <li><p>Which of the following Angle can be measure by Set Square (Without Protector)?</p></li>
+       <p>(A) 135° </p>
+       <p>(B)10°</p>
+       <p> (C) 50°</p>
+       <p>(D) All of this</p>
+      <p>ANS. 10°</p><div id="verticle-line" ></div>
+       <li><p>The size of Lead used in Engineering Graphics is</p></li>
+      <p>ANS. 0.5 mm</p><div id="verticle-line" ></div>
+       <li><p>The F.V. of the cone when it is resting on H.P. on its base is ___________</p></li>
+      <p>ANS. Circle</p><div id="verticle-line" ></div>
+       <li><p>The eccentricity of Parabolic Curve is __________</p></li>
+      <p>ANS. 1</p><div id="verticle-line" ></div>
+       <li><p>The command use for drawing the line in Auto CAD is ____________</p></li>
+      <p>ANS. L</p><div id="verticle-line" ></div>
+       <li><p>In 2nd quadrant the F.V. is placed _____________the XY line</p></li>
+      <p>ANS. Above</p><div id="verticle-line" ></div>
+       <li><p>The length of Isometric Scale is ___________time Normal Scale</p></li>
+      <p>ANS. 0.8165</p><div id="verticle-line" ></div>
+       <li><p>Define Tetrahedron.</p></li>
+      <p>ANS. A tetrahedron is a type of polyhedron that consists of four triangular faces, six edges, and four vertices. It is one of the simplest three-dimensional geometric shapes.</p><div id="verticle-line" ></div>
+       <li><p>Write down the application of cycloidal curve?</p></li>
+      <p>ANS.Pendulum Motion,Bridge Construction </p><div id="verticle-line" ></div>
+       <li><p>Why we are not using 2nd and 4th angle projection System?</p></li>
+      <p>ANS. Standardization, complexity, lack of familiarity, and compatibility with modern digital tools have led to the decline of 2nd and 4th angle projection.</p><div id="verticle-line" ></div>
+       <li><p>Define Orthographic Projection</p></li>
+      <p>ANS. Orthographic projection is a method of representing a three-dimensional object by creating multiple two-dimensional views from different angles, allowing for accurate visualization and measurement of its features.</p><div id="verticle-line" ></div>
+       <li><p>The eccentricity of which of the following curve is less than one?</p></li>
+      <p>ANS. Ellipse</p><div id="verticle-line" ></div>
+       <li><p>When the diameter of the directing circle is twice the diameter of rolling circle the hypo
+cycloid obtained is a</p></li>
+      <p>ANS. Epicycloid</p><div id="verticle-line" ></div>
+       <li><p>For drawing of small instruments, watches etc. the scale used is</p></li>
+      <p>ANS.  Enlarged scale</p><div id="verticle-line" ></div>
+       <li><p>A pyramid is cut by a plane parallel to is base removing the apex, the rearming part is
+known as</p></li>
+      <p>ANS. Frustum</p><div id="verticle-line" ></div>
+       <li><p>Second angle projection is not used because</p></li>
+      <p>ANS. both views overlap each other</p><div id="verticle-line" ></div>
+       <li><p>To obtain the true shape of the section of solid, an auxiliary plane is set at ______________</p></li>
+      <p>ANS. the desired cutting plane or section plane.</p><div id="verticle-line" ></div>
+       <li><p>The type of line used to indicate a cutting plane is _______________________.</p></li>
+      <p>ANS. dashed or dotted line.</p><div id="verticle-line" ></div>
+       <li><p>Dashed line is used to draw_________________</p></li>
+      <p>ANS. Hidden Lines</p><div id="verticle-line" ></div>
+      <li><p>Explain Aligned Dimensioning system.</p></li>
+      <p>ANS. Aligned dimensioning system is a method of dimensioning where dimensions are placed parallel to the dimension lines, avoiding overlapping and providing clear and readable dimensioning information for objects in engineering and technical drawings.</p><div id="verticle-line" ></div>
+      <li><p>Explain Unidirectional Dimensioning system.</p></li>
+      <p>ANS. Unidirectional dimensioning is a method of dimensioning where all dimensions are aligned in a single direction, either horizontal or vertical. It provides clarity and readability in engineering drawings by eliminating dimension line intersections and ensuring consistent orientation.</p><div id="verticle-line" ></div>
+      <li><p>What is the position with respect to reference plane , If the object lies in the fourth quadrant ?</p></li>
+      <p>ANS. If an object lies in the fourth quadrant, it is positioned below the reference plane.</p><div id="verticle-line" ></div>
+      <li><p>Explain the term H.C.P.</p></li>
+      <p>ANS. In engineering drawings, the term H.C.P. typically refers to the abbreviation for "Horizontal Centerline Plane." It is a reference line or plane used to establish the horizontal centerline of an object or component. The H.C.P. is often indicated in technical drawings to provide a baseline for dimensioning, alignment, and positioning of various features and elements. It helps ensure accurate and consistent measurements and relationships within the drawing.</p><div id="verticle-line" ></div>
+      <li><p>In the third angle projection method, the view seen from left is placed on </p></li>
+      <p>ANS. In the third angle projection method, the view seen from the left is placed on the right-hand side of the object.</p><div id="verticle-line" ></div>
+      <li><p>When the diameter of the directing circle is twice the diameter of rolling circle the hypo 
+cycloid obtained is a </p></li>
+      <p>ANS. Straight Line</p><div id="verticle-line" ></div>
+      <li><p>To obtain the true shape of the section of solid, an auxiliary plane is set</p></li>
+      <p>ANS. Perpendicular to a cutting plane</p><div id="verticle-line" ></div>
+      <li><p>When a cone is cut by a plane perpendicular to base passing through the apex “the shape 
+Of section obtained is.</p></li>
+      <p>ANS. Triangle</p><div id="verticle-line" ></div>
+      <li><p>When a line is inclined to VP and parallel to HP, the front view will be _______ to xy.</p></li>
+      <p>ANS. Perpendicular</p><div id="verticle-line" ></div>
+      <li><p>When the drawing is drawn smaller than the actual size of object then scale is known as_____ </p></li>
+      <p>ANS. Reduced Scale</p><div id="verticle-line" ></div>
+      <li><p>Circle Rotating outside of another circle is known as__________ </p></li>
+      <p>ANS. Cycloids</p><div id="verticle-line" ></div>
+      <li><p>Explain terms of A.I.P </p></li>
+      <p>ANS. In engineering drawings, A.I.P stands for "Auxiliary Information Plane." It is an additional reference plane used to show supplementary details, sectional views, or specific features that may not be adequately represented in the primary views, providing a more comprehensive representation of the object being depicted.</p><div id="verticle-line" ></div>
+      <li><p>Explain term of P.C.P.</p></li>
+      <p>ANS. In engineering drawings, P.C.P stands for "Principal Cutting Plane." It is a reference plane used to represent the primary sectional view of an object, revealing its internal features, hidden details, and arrangement of components.</p><div id="verticle-line" ></div>
+      <li><p>If the object lies in the fourth quadrant, its position with respect to reference plane will be</p></li>
+      <p>ANS. In front of V.P. and below H.P</p><div id="verticle-line" ></div>
+      <li><p>Which of the following represent full scale?</p></li>
+      <p>ANS. 1:1</p><div id="verticle-line" ></div>
+      <li><p>The angle between isometric axis is</p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+      <li><p>A solid is said to be a right solid if</p></li>
+      <p>ANS. Axis is perpendicular to its base</p><div id="verticle-line" ></div>
+      <li><p>Second angle projection is not used because </p></li>
+      <p>ANS. both views overlap each other</p><div id="verticle-line" ></div>
+      <li><p>When the drawings are drawn smaller than the actual size of object then scale is known as</p></li>
+      <p>ANS. Reduced Scale</p><div id="verticle-line" ></div>
+      <li><p>To obtain the true shape of the section of solid, an auxiliary plane is set at ______________</p></li>
+      <p>ANS. perpendicular to the cutting plane.</p><div id="verticle-line" ></div>
+      <li><p>The type of line used to indicate a cutting plane is _______________________.
+</p></li>
+      <p>ANS. dashed or dotted line.</p><div id="verticle-line" ></div>
+      <li><p>What is the difference between the Isometric drawing and Isometric projection ?</p></li>
+      <p>ANS. Isometric drawing refers to a 2D representation of a 3D object using parallel lines to convey depth, without any distortion or foreshortening. It is a simplified representation of an object, typically drawn on isometric graph paper. On the other hand, isometric projection is a method of visually representing a 3D object in a 2D space, using parallel lines that are not necessarily perpendicular to the viewing plane. Isometric projection is a more complex and accurate representation, often used in engineering and technical drawings.</p><div id="verticle-line" ></div>
+      <li><p>What is representative factor?</p></li>
+      <p>ANS. The representative factor, also known as the scale factor or scale ratio, is a numerical value that represents the relationship between the dimensions of an object in a drawing and its actual size in real life. It is used to indicate how much the drawing has been scaled down or up compared to the actual object.
+      <sup>Drawing Length</sup>&frasl;<sub>Actual Length</sub></p><div id="verticle-line" ></div>
+      <li><p>In a parabola, distance of focus to vertex is 50 mm , the distance of focus to directrix is ___mm.</p></li>
+      <p>ANS. 50 mm</p><div id="verticle-line" ></div>
+      <li><p>The Surface of tetrahedron contains _____ number of equilateral triangles.
+</p></li>
+      <p>ANS. 4</p><div id="verticle-line" ></div>
+      <li><p>When a circle rolls over the Flat surface without Slipping, the path traced out by a point on the 
+circumference is called ____________.(name the curve)</p></li>
+      <p>ANS. Cycloid</p><div id="verticle-line" ></div>
+      <li><p>A Point in front of V.P and Below H.P is in which quadrant?</p></li>
+      <p>ANS. 4<sup>th</sup>Quadrant </p><div id="verticle-line" ></div>
+      <li><p>Eccentricity of which conical curve is less than 1?</p></li>
+      <p>ANS. Ellipse</p><div id="verticle-line" ></div>
+      <li><p>In first angle projection method The Right Hand Side View is placed on</p></li>
+      <p>ANS. Left side of the front view</p><div id="verticle-line" ></div>
+      <li><p>For the First Angle Projection Method, Which of the following is correct sequence?</p></li>
+      <p>ANS. Observer - Plane of Projection - Object</p><div id="verticle-line" ></div>
+      <li><p>The shape of a slant face of right regular Hexagonal pyramid is always__________ in shape and the base is ________in shape.</p></li>
+      <p>ANS. The shape of a slant face of a right regular hexagonal pyramid is always a triangle, specifically an equilateral triangle. The base of the right regular hexagonal pyramid is in the shape of a regular hexagon.</p><div id="verticle-line" ></div>
+      <li><p>In a map,200 m length is represented as 1cm then the Representative Fraction is</p></li>
+      <p>ANS. <sup>1</sup>&frasl;<sub>20000</sub></p></p><div id="verticle-line" ></div>
+      <li><p>The line is parallel to H.P and perpendicular to V.P. True length can be seen in which views by an observer?</p></li>
+      <p>ANS. Top View and side view</p><div id="verticle-line" ></div>
+      <li><p>The lateral surface of right regular pentagonal prism, size 30 mm each side of base and 60 mm height is to be developed, what is the shape of developed surface with length and height of the 
+surface development? </p></li>
+      <p>ANS. The total length of the developed surface would be 5 times the width of one rectangle, or 150 mm. The height of the developed surface would be equal to the height of one rectangle, or 60 mm.</p><div id="verticle-line" ></div>
+      <li><p>The following is not included in title block of drawing sheet.</p></li>
+      <p>(a)Sheet No</p>
+      <p> (b)Scale</p>
+      <p>(c)Size of Sheet </p>
+      <p>(d) Angle of Projection Symbol</p>
+      <p>ANS. Size of Sheet</p><div id="verticle-line" ></div>
+      <li><p>In AutoCAD which key is used to Toggle Ortho mode?</p></li>
+      <p>(a) F4 </p>
+       <p>(b) F5 </p>
+       <p>(c) F7</p>
+       <p> (D)F8</p>
+       <p>ANS. F7</p><div id="verticle-line" ></div>
+      <li><p>The axis of the cylinder is denoted by which of the following line?</p></li>
+      <p>ANS.  Centerline</p><div id="verticle-line" ></div>
+      <li><p>‘Representative fraction’ (RF) is defined as</p></li>
+      <p>ANS. <sup>Drawing Length</sup>&frasl;<sub>Actual Length</sub></p></p><div id="verticle-line" ></div>
+      <li><p>In AutoCAD Following command is used to erase the drawing</p></li>
+      <p>ANS. E</p><div id="verticle-line" ></div>
+      <li><p>Hatching (Section) lines are drawn at ___ degree to reference line</p></li>
+      <p>ANS. 45</p><div id="verticle-line" ></div>
+      <li><p>When the line is parallel to VP and Perpendicular to HP , We can get its true length in 
+___________plane</p></li>
+      <p>ANS. Vertical Plane or Front View</p><div id="verticle-line" ></div>
+      <li><p>Which Command is used to copy the object in AutoCAD ?</p></li>
+      <p>ANS. CO</p><div id="verticle-line" ></div>
+      <li><p>The angle between the isometric axes is __________</p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+      <li><p>The objects we see in nature will be in Isometric view. True or False</p></li>
+      <p>ANS. FALSE</p><div id="verticle-line" ></div>
+      <li><p>Solid having Four Triangular faces is called ________________</p></li>
+      <p>ANS. Tetrahedron</p><div id="verticle-line" ></div>
+      <li><p>A cone base diameter 40 mm and Axis 60 mm is cut by a plane parallel to the base than the true shape will be ____________.</p></li>
+      <p>ANS. Circle</p><div id="verticle-line" ></div>
+      <li><p>In Isometric drawing the circle is looks like a ________________.</p></li>
+      <p>ANS. Ellipse</p><div id="verticle-line" ></div>
+      <li><p>The Elevation , Plan and side view of Sphere is ______________.</p></li>
+      <p>ANS. They all will be Circle</p><div id="verticle-line" ></div>
+      <li><p>The curve generated by a point on the circumference of a circle, which rolls without slipping along outside of another circle is known as</p></li>
+      <p>ANS. Cycloid</p><div id="verticle-line" ></div>
+      <li><p>A square plate of negligible thickness is inclined to HP. The front view will appear as</p></li>
+      <p>ANS. Rhombus</p><div id="verticle-line" ></div>
+      <li><p>For the third angle projection method, which of the following is correct?</p></li>
+      <p>ANS. Observer – Plane – Object </p><div id="verticle-line" ></div>
+      <li><p>The included angle of a hexagon is</p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+      <li><p>The development of cylinder is a</p></li>
+      <p>ANS. Rectangle</p><div id="verticle-line" ></div>
+      <li><p>Define Representative Fraction (R.F).</p></li>
+      <p>ANS. The representative factor, also known as the scale factor or scale ratio, is a numerical value that represents the relationship between the dimensions of an object in a drawing and its actual size in real life. It is used to indicate how much the drawing has been scaled down or up compared to the actual object.
+      <sup>Drawing Length</sup>&frasl;<sub>Actual Length</sub></p><div id="verticle-line" ></div>
+      <li><p>Explain STRAIGHT LINE command used in AUTOCAD.</p></li>
+      <p>ANS.  In AutoCAD, there is no specific "STRAIGHT LINE" command. However, the LINE command is commonly used to draw straight lines between specified points in the software.</p><div id="verticle-line" ></div>
+      <li><p>Explain CIRCLE command used in AUTOCAD.</p></li>
+      <p>ANS. The CIRCLE command in AutoCAD is used to create a circle by specifying a center point and radius or diameter. It is a fundamental drawing command that allows for the precise creation of circles in a variety of sizes and positions within a drawing.</p><div id="verticle-line" ></div>
+      <li><p>Explain FILLET command used in AUTOCAD.</p></li>
+      <p>ANS. The FILLET command in AutoCAD is used to create a rounded corner between two selected objects or line segments. It allows you to specify a radius for the fillet, and AutoCAD will automatically create a smooth transition between the entities, creating a rounded corner.</p><div id="verticle-line" ></div>
+      <li><p>Explain the term H.C.P.</p></li>
+      <p>ANS. In engineering drawings, the term H.C.P. typically refers to the abbreviation for "Horizontal Centerline Plane." It is a reference line or plane used to establish the horizontal centerline of an object or component. The H.C.P. is often indicated in technical drawings to provide a baseline for dimensioning, alignment, and positioning of various features and elements. It helps ensure accurate and consistent measurements and relationships within the drawing.</p>
+      <li><p>Explain the term of V.C.P.</p></li><div id="verticle-line" ></div>
+      <p>ANS. V.C.P stands for Vertical Centre Plane. In engineering and drafting, V.C.P refers to a reference plane that divides an object or drawing vertically into two symmetrical halves. It is a virtual plane passing through the center of an object, used for establishing symmetry and determining dimensions and positions in technical drawings and designs.</p><div id="verticle-line" ></div>
+      <li><p>Why Fourth angle projection is not used?</p></li>
+      <p>ANS. Fourth angle projection is not used in engineering and technical drawings due to the lack of standardization, increased complexity, and limited compatibility.</p><div id="verticle-line" ></div>
+      <li><p>Which of the following Curves is known as Conic Curves?</p></li>
+      <p>(A) Involute</p>
+      <p> (B) Spiral</p>
+      <p> (C) Hyperbola</p>
+      <p> (D) Cycloid</p>
+      <p>ANS. Hyperbola</p><div id="verticle-line" ></div>
+      <li><p>Which of the following is TRUE for 1st angle Projection System?</p></li>
+      <p>ANS. Observer-Plane-Object</p><div id="verticle-line" ></div>
+      <li><p>Which of the following Angle can be measure by Set Square (Without using Protector)?</p></li>
+      <p>ANS. 10°</p><div id="verticle-line" ></div>
+      <li><p>The angle between any two axis for an isometric drawing is </p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+      <li><p>The size of Lead used in Engineering Graphics is</p></li>
+      <p>ANS. 0.5 mm</p><div id="verticle-line" ></div>
+      <li><p>The F.V. of the cone when it is resting on H.P. on its base is ___________ </p></li>
+      <p>ANS. Triangle</p><div id="verticle-line" ></div>
+      <li><p>The eccentricity of Parabolic Curve is __________</p></li>
+      <p>ANS. 1</p><div id="verticle-line" ></div>
+      <li><p>The command use for drawing the line in Auto CAD is ____________</p></li>
+      <p>ANS. L</p><div id="verticle-line" ></div>
+      <li><p>In 2nd quadrant the F.V. is placed _____________the XY line.</p></li>
+      <p>ANS. Above</p><div id="verticle-line" ></div>
+      <li><p>The length of Isometric Scale ___________time Normal Scale.</p></li>
+      <p>ANS. 0.815</p><div id="verticle-line" ></div>
+      <li><p>Define Representative Fraction.</p></li>
+      <p>ANS. The representative factor, also known as the scale factor or scale ratio, is a numerical value that represents the relationship between the dimensions of an object in a drawing and its actual size in real life. It is used to indicate how much the drawing has been scaled down or up compared to the actual object.
+      <sup>Drawing Length</sup>&frasl;<sub>Actual Length</sub></p><div id="verticle-line" ></div>
+      <li><p>Write down the application of conic curve?</p></li>
+      <p>ANS. Conic curves have diverse applications across various fields. They are utilized in architecture for designing arches, vaults, and domes, in optics for shaping lenses and mirrors, in astronomy for describing celestial orbits, in engineering for designing gears and turbines, in mathematics for studying conic sections, and in art and graphics for creating visually appealing shapes and patterns.</p><div id="verticle-line" ></div>
+      <li><p>Why we are not using 2nd and 4th angle projection System?</p></li>
+      <p>ANS.  Standardization, complexity, lack of familiarity, and compatibility with modern digital tools have led to the decline of 2nd and 4th angle projection.</p><div id="verticle-line" ></div>
+      <li><p> Define Orthographic Projection.</p></li>
+      <p>ANS. Orthographic Projection is a technique used in engineering and technical drawing to represent a three-dimensional object on a two-dimensional plane, showing multiple views of the object from different directions without perspective distortion.</p><div id="verticle-line" ></div>
+      <li><p>If ϴ + Ø = 90°, then which of the following statements is CORRECT? </p></li>
+        <p>(a) α = β = 90°</p>
+        <p>(b) side view = TL </p>
+        <p>(c) FV is perpendicular to XY </p>
+        <p>(d) All of the above</p>
+      <p>ANS. α = β = 90°</p><div id="verticle-line" ></div>
+      <li><p>Which of the following represent full scale? </p></li>
+      <p>ANS. 1:1</p><div id="verticle-line" ></div>
+      <li><p>A curved traced out by a point which moves uniformly both about the Centre and at the same time away or towards the Centre is known as </p></li>
+      <p>ANS.  Archemedian spiral</p><div id="verticle-line" ></div>
+      <li><p>10 mm Length of line in Isometric projection will be equal to </p></li>
+      <p>ANS. 8.15 mm</p><div id="verticle-line" ></div>
+      <li><p> In first angle projection method The Left hand side view is placed on </p></li>
+      <p>ANS.  Right side of elevation</p><div id="verticle-line" ></div>
+      <li><p>Which type of line is used to indicate a cutting plane? </p></li>
+      <p>ANS. CHAIN THIN WITH THICK ENDS</p><div id="verticle-line" ></div>
+      <li><p>To obtain the true shape of the section of solid, an auxiliary plane is set at ____________.</p></li>
+      <p>ANS.  Perpendicular to the cutting plane.</p><div id="verticle-line" ></div>
+      <li><p>The top view of a rectangular shaped room will show ______________________. </p></li>
+      <p>ANS. Rectangular shape</p><div id="verticle-line" ></div>
+      <li><p>Why we are not used Second angle projection method? </p></li>
+      <p>ANS. Because the top view and front view overlappes each other</p><div id="verticle-line" ></div>
+      <li><p>In Isometric projection, the length or width of the object is drawn at _________ to the horizontal reference line. </p></li>
+      <p>ANS. 30°</p><div id="verticle-line" ></div>
+      <li><p>Define “Representative Fraction”.</p></li>
+      <p>ANS. The representative factor, also known as the scale factor or scale ratio, is a numerical value that represents the relationship between the dimensions of an object in a drawing and its actual size in real life. It is used to indicate how much the drawing has been scaled down or up compared to the actual object.
+      <sup>Drawing Length</sup>&frasl;<sub>Actual Length</sub></p><div id="verticle-line" ></div>
+      <li><p>The side view of an object is drawn in which plane? </p></li>
+      <p>ANS. Profile Plane</p><div id="verticle-line" ></div>
+      <li><p>For the third angle projection method, which of the following is correct? </p></li>
+      <p>ANS. Observer - Object - Plane.</p><div id="verticle-line" ></div>
+      <li><p>If an object lies in third quadrant, its position with respect to reference planes will be</p></li>
+      <p>ANS. behind V.P., below H.P</p><div id="verticle-line" ></div>
+      <li><p>The included angle of a hexagon is </p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+      <li><p>Length of a line ‘L’ in isometric drawing or view will be</p></li>
+      <p>ANS. 0.815L</p><div id="verticle-line" ></div>
+      <li><p>When a cone is cut by a plane perpendicular to base passing through the apex “the shape of section obtained is</p></li>
+      <p>ANS. Triangle</p><div id="verticle-line" ></div>
+      <li><p>Explain the term HCP.</p></li>
+      <p>ANS.  In engineering drawings, the term H.C.P. typically refers to the abbreviation for "Horizontal Centerline Plane." It is a reference line or plane used to establish the horizontal centerline of an object or component. The H.C.P. is often indicated in technical drawings to provide a baseline for dimensioning, alignment, and positioning of various features and elements. It helps ensure accurate and consistent measurements and relationships within the drawing.</p><div id="verticle-line" ></div>
+      <li><p>Explain the term VCP.</p></li>
+      <p>ANS. V.C.P stands for Vertical Centre Plane. In engineering and drafting, V.C.P refers to a reference plane that divides an object or drawing vertically into two symmetrical halves. It is a virtual plane passing through the center of an object, used for establishing symmetry and determining dimensions and positions in technical drawings and designs.</p><div id="verticle-line" ></div>
+      <li><p>Explain the term AIP.</p></li>
+      <p>ANS. In engineering drawings, A.I.P stands for "Auxiliary Information Plane." It is an additional reference plane used to show supplementary details, sectional views, or specific features that may not be adequately represented in the primary views, providing a more comprehensive representation of the object being depicted.</p><div id="verticle-line" ></div>
+      <li><p>Explain the term AVP.</p></li>
+      <p>ANS. AVP stands for "Auxiliary View Projection." It is a technique used in technical drawing to create additional orthographic views of an object when its principal faces are not parallel or perpendicular to the main orthographic planes. Auxiliary views provide a more accurate representation of the object's shape and allow for better understanding of its features and dimensions.</p><div id="verticle-line" ></div>
+      <li><p>Explain Unidirectional Dimensioning system</p></li>
+      <p>ANS.  Unidirectional dimensioning is a method of dimensioning where all dimensions are aligned in a single direction, either horizontal or vertical. It provides clarity and readability in engineering drawings by eliminating dimension line intersections and ensuring consistent orientation.</p><div id="verticle-line" ></div>
+      <li><p>Explain Aligned Dimensioning system.</p></li>
+      <p>ANS. Aligned dimensioning system is a method of dimensioning where dimensions are placed parallel to the dimension lines, avoiding overlapping and providing clear and readable dimensioning information for objects in engineering and technical drawings.</p><div id="verticle-line" ></div>
+      <li><p>Define Eccentricity.</p></li>
+      <p>ANS. <sup>Distance of a moving point from focus</sup>&frasl;<sub>Distance of a moving point from Directrix</sub></p><div id="verticle-line" ></div>
+      <li><p>Hatching lines are drawn at ____ degree to reference line</p></li>
+      <p>ANS. 45</p><div id="verticle-line" ></div>
+      <li><p>When a line is parallel to HP and VP, its top view is the form of ____________.
+</p></li>
+      <p>ANS. Point</p><div id="verticle-line" ></div>
+      <li><p>Imaginary line joining from apex to center of base of cone is called as __________.</p></li>
+      <p>ANS. Axis of the cone</p><div id="verticle-line" ></div>
+      <li><p>The inclination of the projections that represents the apparent lengths are known as ____.</p></li>
+      <p>ANS. Apparent Inclination</p><div id="verticle-line" ></div>
+      <li><p>A cylinder is been cut by a plane parallel to its base the section will be _________</p></li>
+      <p>ANS. Circle</p><div id="verticle-line" ></div>
+      <li><p>When the projectors are parallel to each other and also perpendicular to the plane, the projection is called ______.</p></li>
+      <p>ANS. Orthographic Projection</p><div id="verticle-line" ></div>
+      <li><p>The line formed by intersection of principal planes is called _____________
+</p></li>
+      <p>ANS. Reference line</p><div id="verticle-line" ></div>
+      <li><p>The sections cut by a plane on a right circular cone are called as ______
+</p></li>
+      <p>ANS. Conic Section</p><div id="verticle-line" ></div>
+      <li><p>. In unidirectional system the dimensions are ______</p></li>
+      <p>ANS. Placed by breaking the dimension line in the middle</p><div id="verticle-line" ></div>
+      <li><p>. The top view of a circular disc inclined to Horizontal plane and parallel to Vertical plane is ____.</p></li>
+      <p>ANS. Ellipse</p><div id="verticle-line" ></div>
+      <li><p>Find RF if 5 cm in the drawing is equal to 25 km.</p></li>
+      <p>ANS. <sup>1</sup>&frasl;<sub>50000</sub></p><div id="verticle-line" ></div>
+      <li><p>Define Cycloid?</p></li>
+      <p>ANS. A cycloid is a curve traced by a point on the circumference of a rolling circle as it moves along a straight line. In other words, it is the path followed by a fixed point on the edge of a rolling circle.</p><div id="verticle-line" ></div>
+      <li><p>Explain AIP and AVP</p></li>
+      <p>ANS. AIP and AVP are auxiliary planes used in engineering drawing. An AIP is a plane inclined to the HP and perpendicular to the VP. AVP represents a plane inclined to the VP and perpendicular to the HP.</p><div id="verticle-line" ></div>
+      <li><p>How to Draw the Circle in the Auto Cad?</p></li>
+      <p>ANS.<br> 1)Open AutoCAD and start a new drawing or open an existing one.</p>
+      <p>2)Make sure you are in the "Home" tab of the ribbon.</p>
+      <p>3)Press the "C" key on your keyboard. This is the keyboard shortcut for the "Circle" command.</p>
+      <p>4)Specify the center point of the circle by clicking on a point in the drawing area or by typing the coordinates manually.</p>
+      <p>5)Enter the radius of the circle by typing the value or clicking on another point to specify the diameter.</p><div id="verticle-line" ></div>
+      <li><p>What is First Angle Projection System?</p></li>
+      <p>ANS. First Angle Projection is a method of creating orthographic projections, where the object is placed in the first quadrant of the viewing planes. The object is imagined to be enclosed within a transparent glass box, and the views are projected onto the planes surrounding the box. The top view is placed above the front view, and the right-side view is placed to the right of the front view.</p><div id="verticle-line" ></div>
+      <li><p>Which software is generally used in the computer for drafting?</p></li>
+      <p>ANS. AutoCAD</p><div id="verticle-line" ></div>
+      <li><p>Which pencil is darker?</p></li>
+      <p>a) H</p>
+      <p> b) 2H</p>
+      <p> c) HB</p>
+      <p> d) 4H</p>
+      <p>ANS. HB</p><div id="verticle-line" ></div>
+      <li><p>The curve traced out by a point which moves uniformly both about the Centre and at the same time away or toward the Centre is</p></li>
+      <p>ANS. Cycloid</p><div id="verticle-line" ></div>
+      <li><p>Name the solid formed by four equilateral triangle</p></li>
+      <p>ANS. Tetrahedron</p><div id="verticle-line" ></div>
+      <li><p>What is the size of the title block in the drawing sheet?</p></li>
+      <p>ANS.  185×65</p><div id="verticle-line" ></div>
+      <li><p>To obtain the true shape of the section of solid, an auxiliary plane is set__________</p></li>
+      <p>ANS. Perpendicular to the cutting plane</p><div id="verticle-line" ></div>
+      <li><p>When the cone, resting on base on V.P., is cut by section plane parallel to V.P. then the true shape is __________ and can be seen in __________ view</p></li>
+      <p>ANS. When the cone, resting on its base on the Vertical Plane (V.P.), is cut by a section plane parallel to the V.P., the true shape of the section is an ellipse. This true shape can be seen in the top view or plan view of the cone.</p><div id="verticle-line" ></div>
+      <li><p>A curve drawn for Boyle’s law (PV = constant) on a P-V chart has a characteristic shape of__________</p></li>
+      <p>ANS. HYPERBOLA</p><div id="verticle-line" ></div>
+      <li><p>. In Isometric view length, Width, and Height are inclined at__________</p></li>
+      <p>ANS. 120°</p><div id="verticle-line" ></div>
+      <li><p>If the 10 m length is represented as 1 mm on the map then representative fraction is__________</p></li>
+      <p>ANS. <sup>1</sup>&frasl;<sub>10000</sub></p><div id="verticle-line" ></div>
+      
+      </ol>
+      
+      
+    </div>
+   
+
+</body>
+</html>
+
+
