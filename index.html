@@ -172,6 +172,39 @@ ul
   height: auto;
 }
   
+
+.image-grid-container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inside-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+}
+
+.image1 img, .image2 img, .image3 img, .image4 img, .image5 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .image-grid-container, .inside-container {
+      grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -217,13 +250,24 @@ ul
   </div> 
   
 </div>
-<div class="row">
-  <div class="center-column">
-
-    <div class="card">     
-    <img src="Image.png" alt="Image" class="responsive"> 
-      
+<div class = "image-grid-container">
+    <div class = "image1">
+        <img alt = "image1" src = "image1.png">
+    </div>
+    <div class = "inside-container">
+        <div class = "image2">
+            <img alt = "image2" src = "image2.png">
+        </div>
+        <div class = "image3">
+            <img alt = "image3" src = "image3.png">
+        </div>
+        <div class = "image4">
+            <img alt = "image4" src = "image4.png">
+        </div>
+        <div class = "image5">
+            <img alt = "image5" src = "image5.png">
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
-
